@@ -10,7 +10,7 @@ with open("config.toml", "r") as f:
 file_list = config["settings"]["file_list"]
 file_path = config["settings"]["file_path"]
 output_location = config["settings"]["output_location"]
-t_skip = config["settings"]["t_skip"]
+t_skip = float(config["settings"]["t_skip"])
 t_initial = config["settings"]["t_initial"]
 t_final = config["settings"]["t_final"]
 experiment_name = ["settings"]["experiment_name"]

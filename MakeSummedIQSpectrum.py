@@ -49,7 +49,11 @@ def data_summer(dataset, path, output_location, t_skip):
             lframes = selected_samples,
             nframes = 1
         )
-        zz += np.abs(z)
+        if np.shape(zz)[0] == 0:
+            zz.resize((1, selected_samples))
+            zz += np.abs(z)
+        else:
+            zz += np.abs(z)
 
     xx, yy, _ = iq.get_power_spectrogram(
         lframes = selected_samples,

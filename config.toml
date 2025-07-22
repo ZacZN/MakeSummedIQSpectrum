@@ -1,0 +1,9 @@
+[settings]
+file_list = "path-to-file-list"
+file_path = "path-to-datafiles"
+output_location = "path-to-output-location"
+t_skip = "time-to-skip-in-each-file"
+t_initial = "time-of-first-file"
+t_final = "time-of-last-file"
+experiment_name = "experiment-name"
+

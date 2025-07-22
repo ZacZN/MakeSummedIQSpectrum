@@ -13,7 +13,7 @@ output_location = config["settings"]["output_location"]
 t_skip = float(config["settings"]["t_skip"])
 t_initial = config["settings"]["t_initial"]
 t_final = config["settings"]["t_final"]
-experiment_name = ["settings"]["experiment_name"]
+experiment_name = config["settings"]["experiment_name"]
 
 
 # Parse the filelist into an array

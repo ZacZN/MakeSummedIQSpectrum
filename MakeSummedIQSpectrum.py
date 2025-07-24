@@ -68,7 +68,7 @@ def data_summer(dataset, path, output_location, t_skip):
     xx = xx.flatten()
     zz = zz.flatten()
 
-    np.savez(output_location + output_name + ".npz", xx, np.abs(np.fft.fftshift(zz, axes=1)))
+    np.savez(output_location + output_name + ".npz", xx, np.abs(np.fft.fftshift(zz)))
 
 
 def main():
